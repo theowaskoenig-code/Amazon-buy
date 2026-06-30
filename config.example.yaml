@@ -12,11 +12,11 @@ marketplace_base: "https://www.amazon.de"
 # --- Buy criteria (all must hold before it checks out) ---------------------
 # A case-insensitive substring the product title MUST contain. Guards against
 # buying the wrong item if the page ever changes.
-expected_title_substring: "Midea PortaSplit"
+expected_title_substring: "Shedoo Sonnenhut Kinder UV-Schutz UPF 50+, Breiter Krempe Nackenschutz Fischerhut Baby mit Sonnenbrille, Atmungsaktiv Bucket Hat mit Verstellbarem Kinnriemen, Strandhut für Junge, Mädchen"
 
 # The buy-box seller MUST contain this (case-insensitive). Set to "" to skip the
 # seller check (e.g. for the cheap-item POC where the seller will be someone else).
-required_seller: "Midea"
+required_seller: "Shedoo EU"
 
 # Never pay more than this (EUR). Hard guard.
 max_price: 1199.00
