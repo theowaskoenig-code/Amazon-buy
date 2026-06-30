@@ -1,0 +1,20 @@
+# Local config & secrets — NEVER commit these
+config.yaml
+.env
+
+# Persistent logged-in browser profile (contains your Amazon session cookies!)
+user_data/
+
+# Run artifacts
+screenshots/
+*.png
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+.DS_Store

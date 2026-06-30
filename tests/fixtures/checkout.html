@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><title>Bestellung aufgeben</title></head>
+<body>
+  <h1>Bestellung prüfen und aufgeben</h1>
+  <!-- Fake "Place order" button. Clicking flips a flag we can assert on. -->
+  <input id="turbo-checkout-place-order-button" type="submit" value="Jetzt kaufen"
+         onclick="window.__ORDER_PLACED = true; document.getElementById('done').textContent = 'Bestellung aufgegeben';">
+  <div id="done"></div>
+  <script>window.__ORDER_PLACED = false;</script>
+</body>
+</html>

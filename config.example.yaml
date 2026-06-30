@@ -1,0 +1,46 @@
+# Copy this file to `config.yaml` and fill in your values.
+# `config.yaml` is gitignored so your settings stay local.
+
+# The product page to watch. This is the Midea PortaSplit (ASIN B0GX16LKSC) on amazon.de.
+# (Derived from your link; the third-party affiliate "tag=" param is dropped on purpose.)
+# For the cheap-item POC, just swap this for any cheap in-stock product URL.
+product_url: "https://www.amazon.de/dp/B0GX16LKSC"
+
+# Marketplace base used for the login step.
+marketplace_base: "https://www.amazon.de"
+
+# --- Buy criteria (all must hold before it checks out) ---------------------
+# A case-insensitive substring the product title MUST contain. Guards against
+# buying the wrong item if the page ever changes.
+expected_title_substring: "Midea PortaSplit"
+
+# The buy-box seller MUST contain this (case-insensitive). Set to "" to skip the
+# seller check (e.g. for the cheap-item POC where the seller will be someone else).
+required_seller: "Midea"
+
+# Never pay more than this (EUR). Hard guard.
+max_price: 1199.00
+
+# Accept ANY colour variant that meets the criteria above. If a variant is sold
+# out, the bot tries the other colour swatches on the page.
+any_color: true
+
+# --- Polling --------------------------------------------------------------
+# The page is reloaded every poll_min..poll_max seconds (randomised jitter to
+# look human and stay polite). Keep these reasonable to reduce ban risk.
+poll_min_seconds: 4
+poll_max_seconds: 9
+
+# --- Safety ---------------------------------------------------------------
+# dry_run: true  -> detect + go all the way to the checkout page, then STOP
+#                   before the final "Place order" click. Nothing is bought.
+# dry_run: false -> actually place the order. SET THIS ONLY WHEN YOU'RE READY.
+dry_run: true
+
+# Keep the browser visible (headless: false) so you can watch it and solve any
+# CAPTCHA / 2FA prompts. Headless is more detectable by Amazon.
+headless: false
+
+# Where the logged-in browser profile is stored (gitignored). Created by
+# `autobuyer login`.
+user_data_dir: "user_data"
