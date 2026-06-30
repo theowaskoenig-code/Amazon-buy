@@ -4,7 +4,7 @@
 # The product page to watch. This is the Midea PortaSplit (ASIN B0GX16LKSC) on amazon.de.
 # (Derived from your link; the third-party affiliate "tag=" param is dropped on purpose.)
 # For the cheap-item POC, just swap this for any cheap in-stock product URL.
-product_url: "https://www.amazon.de/dp/B0GX16LKSC"
+product_url: "https://www.amazon.de/Nackenschutz-Fischerhut-Sonnenbrille-Atmungsaktiv-Verstellbarem/dp/B0GKFPYJNP/ref=pd_ci_mcx_mh_mcx_views_0_image?pd_rd_w=xYTZI&content-id=amzn1.sym.bbac26bb-3f7b-44dd-a8a5-c10fcfb1ed60%3Aamzn1.symc.30e3dbb4-8dd8-4bad-b7a1-a45bcdbc49b8&pf_rd_p=bbac26bb-3f7b-44dd-a8a5-c10fcfb1ed60&pf_rd_r=GM4HPRTMRCMP4T7ZDDRC&pd_rd_wg=rCisc&pd_rd_r=0cb91e49-5d62-405a-8e17-0e568f6839b6&pd_rd_i=B0GKFPYJNP&th=1&psc=1"
 
 # Marketplace base used for the login step.
 marketplace_base: "https://www.amazon.de"
